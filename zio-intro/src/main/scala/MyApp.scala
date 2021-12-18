@@ -18,3 +18,6 @@ object ReadPrintLine extends ZIOAppDefault:
       _ <- Console.printLine("Hello, " + n + ", good to meet you!")
     } yield ()
 
+@main def helloZZZ: Unit = 
+  val sayHi = ZIO.effectTotal(println("HI"))
+  Runtime.default.unsafeRun(sayHi)
